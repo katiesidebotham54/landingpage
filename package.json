@@ -13,6 +13,7 @@
         "build": "charge build src public"
     },
     "devDependencies": {
+        "@static/charge": "^1.7.0",
         "browser-sync": "^2.26.7",
         "cross-env": "^6.*",
         "del": "^5.*",
