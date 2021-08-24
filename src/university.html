@@ -126,7 +126,7 @@
                 <div class="col-lg-6">
                     <!-- Heading -->
                     <h1 class="h1 text-white text-center text-lg-left my-4">
-                        Have a question or inquery <strong>in mind?</strong>
+                        Any institution or class interested in using our platform for their classes can contact us below!
                     </h1>
                     <!-- Text -->
                     <p class="lead text-white text-center text-lg-left opacity-8">
@@ -162,16 +162,22 @@
                 <div class="col-lg-6">
                     <form 
                     id="my-form"
-                    action="https://formspree.io/f/mqkwbddw"
+                    action="https://formspree.io/f/xjvjpdyo"
                     method="POST">
                         <div class="form-group">
-                            <input class="form-control form-control-lg" name = "name" type="text" placeholder="Enter your full name" required>
+                            <input class="form-control form-control-lg" name = "name" type="text" placeholder="Full Name" required>
                         </div>
                         <div class="form-group">
                             <input class="form-control form-control-lg" type="email" name= "_replyto" placeholder="email@example.com" required>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control form-control-lg" name = "message" placeholder="Tell us a few words ..." rows="3" required></textarea>
+                            <input class="form-control form-control-lg" type="text"  name = "title" placeholder="Title/position" required>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control form-control-lg" type="text"name = "university"  placeholder="University" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control form-control-lg" name = "message" placeholder="How can we help you ..." rows="3" required></textarea>
                         </div>
                         <div class="text-center">
                             <button type="reset" class="btn-reset d-none"></button>
@@ -261,7 +267,7 @@
                 'Accept': 'application/json'
             }
           }).then(response => {
-            status.innerHTML = "Thanks for your submission!";
+            status.innerHTML = "Thank you, our team will reach out soon!";
             form.reset()
           }).catch(error => {
             status.innerHTML = "Oops! There was a problem submitting your form"
@@ -269,6 +275,7 @@
         }
         form.addEventListener("submit", handleSubmit)
     </script>
+    
 </body>
 
 </html>
